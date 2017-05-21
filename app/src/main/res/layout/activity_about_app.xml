@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayLight"
+    tools:context="com.example.nenguou.myofo.AboutApp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hahahaha">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_download"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRed"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/toolbar_style">
+
+            <FrameLayout
+                android:id="@+id/ll_title_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_back2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="iv_back1"
+                    android:src="@drawable/back_white_24" />
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_below="@+id/hahahaha"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorGrayLight"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/checkUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:onClick="click1"
+            android:text="检查更新"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/updateRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorWhite"
+            android:onClick="click2"
+            android:text="更新日志"
+            android:textColor="@color/colorBlack" />
+
+
+    </LinearLayout>
+</RelativeLayout>

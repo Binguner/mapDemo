@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.nenguou.myofo.login_layout">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/icon_map_5_240" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/login_logon_bg"
+        android:text="登陆"
+        android:textColor="@color/colorRed" />
+
+    <Button
+        android:id="@+id/logon"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_logon_bg"
+        android:text="注册"
+        android:textColor="@color/colorRed" />
+
+    <TextView
+        android:id="@+id/otherway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="其他登陆方式"
+        android:textColor="#cf626362" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otherway"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/wechat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wechat_button"
+                android:layout_centerInParent="true"
+                android:text="WeChat"
+                android:textColor="#cf626362" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/qq_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorWhite"
+                android:src="@drawable/qq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qq_button"
+                android:layout_centerInParent="true"
+                android:text="QQ"
+                android:textColor="#cf626362" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/weibo_botton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorWhite"
+                android:src="@drawable/weibo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/weibo_botton"
+                android:layout_centerInParent="true"
+                android:text="Weibo"
+                android:textColor="#cf626362" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/github_buton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorWhite"
+                android:src="@drawable/github" />
+            <TextView
+                android:layout_below="@+id/github_buton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GitHub"
+                android:layout_centerInParent="true"
+                android:textColor="#cf626362"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

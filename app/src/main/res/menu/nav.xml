@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_receipt"
+            android:icon="@drawable/ic_receipt_white_24dp"
+            android:title="我的行程" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_account_balance_wallet_white_24dp"
+            android:title="我的周围" />
+    </group>
+
+    <group
+        android:id="@+id/grouup2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_guide"
+            android:icon="@drawable/redeem_icon"
+            android:title="开始导航" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@drawable/download_white_24"
+            android:title="离线地图" />
+        <item
+            android:id="@+id/nav_join"
+            android:icon="@drawable/ic_person_add_white_24dp"
+            android:title="导航语音" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_white_24dp"
+            android:title="关于软件" />
+        <item
+            android:id="@+id/nav_exitapp"
+            android:icon="@drawable/ic_help_white_24dp"
+            android:title="退出应用" />
+    </group>
+
+</menu>

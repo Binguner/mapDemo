@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.nenguou.myofo.MainActivity">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.amap.api.maps.MapView>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRed"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/toolbar_style">
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/airplane_white_24"
+            android:scaleType="centerCrop"
+            app:fab_size="normal"
+            app:fab_colorNormal="#0015ff"
+            app:fab_colorPressed="#5562f7"
+            app:fab_colorRipple="#9ba2fa"
+
+            />
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu_red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true"
+            fab:menu_backgroundColor="#ccffffff"
+            fab:menu_fab_label="Menu label">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/guide_white_24"
+                fab:fab_size="mini"
+                fab:fab_label="Guide" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search__white_24"
+                fab:fab_size="mini"
+                fab:fab_label="Search" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                fab:fab_size="mini"
+                fab:fab_label="Restore Button" />
+
+         </com.github.clans.fab.FloatingActionMenu>
+
+
+    </FrameLayout>
+
+
+    <!--    <include
+            layout="@layout/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#000000"
+            android:id="@+id/right_sliding"
+            />-->
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="?attr/colorPrimary"
+        app:headerLayout="@layout/header_login"
+        app:menu="@menu/nav" />
+
+</android.support.v4.widget.DrawerLayout>
+

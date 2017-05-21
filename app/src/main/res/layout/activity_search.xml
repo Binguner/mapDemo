@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.example.nenguou.myofo.PageAdapter.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/hahahaha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_download"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRed"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/toolbar_style">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/ll_title_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingRight="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_back2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="iv_back1"
+                        android:src="@drawable/back_white_24" />
+                </FrameLayout>
+
+                <EditText
+                    android:layout_width="265dp"
+                    android:layout_height="35dp"
+                    android:background="#e96a4d"
+                    android:drawableLeft="@drawable/search__white_24"
+                    android:hint="搜索"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <ImageView
+                    android:id="@+id/microphone_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="yuying"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/microphone_blue_24" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/coffe_bronw_circle_48" />
+
+            <ImageButton
+                android:id="@+id/btn_hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/hotel_blue_circle_48" />
+
+            <ImageButton
+                android:id="@+id/btn_bus_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/busstation_green_circle_48" />
+
+            <ImageButton
+                android:id="@+id/btn_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/money_red_circle_48" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layouttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="美食"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="65dp"
+                android:text="酒店"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="55dp"
+                android:text="公交站"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:text="银行"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layouttext"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_views"
+                android:layout_width="wrap_content"
+                android:onClick="click"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/mountain_circle_green_light48" />
+
+            <ImageButton
+                android:id="@+id/btn_fighting_station"
+                android:layout_width="wrap_content"
+                android:onClick="click"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/gasstation_purple_circle_48" />
+
+            <ImageButton
+                android:id="@+id/btn_collection"
+                android:layout_width="wrap_content"
+                android:onClick="click"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:src="@drawable/star_orange_circle_48" />
+
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:onClick="click"
+                android:src="@drawable/more_blue_light_circle_48" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layouttext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout222">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="景点"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:text="加油站"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="收藏夹"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="55dp"
+                android:text="更多"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

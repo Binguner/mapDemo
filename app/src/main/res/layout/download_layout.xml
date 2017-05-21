@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/toolbar_style">
+
+        <FrameLayout
+            android:id="@+id/ll_title_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:paddingRight="15dp">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="iv_back"
+                android:src="@drawable/back_white_24" />
+        </FrameLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_bg"
+                    android:text="下载管理"
+                    android:textColor="@color/colorBlack" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_bg"
+                    android:text="城市列表"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </android.support.v7.widget.Toolbar>
+
+
+</LinearLayout>
